@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to CKD Prediction System</title>
+    <link rel="stylesheet" href="{% static 'css/welcome.css' %}">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 20a2 2 0 1 0-4 0"/>
+                            <path d="M16 12a2 2 0 1 0-4 0"/>
+                            <path d="M12 20a2 2 0 1 0-4 0"/>
+                            <path d="M20 12a2 2 0 1 0-4 0"/>
+                            <path d="M4 12a2 2 0 1 0-4 0"/>
+                            <path d="M8 12a2 2 0 1 0-4 0"/>
+                        </svg>
+                        <span>CKD Prediction</span>
+                    </div>
+                    <div class="nav-links">
+                        <a href="{% url 'login' %}" class="login-btn">Login</a>
+                        <a href="{% url 'signup' %}" class="signup-btn">Sign Up</a>
+                    </div>
+                </nav>
+
+                <div class="hero-content">
+                    <h1>Welcome to CKD CARE </h1>
+                    <p>Personalized treatment recommendations for Chronic Kidney Disease using advanced machine learning and multimodal clinical data</p>
+                    <div class="cta-buttons">
+                        <a href="{% url 'signup' %}" class="primary-btn">Get Started</a>
+                        <a href="#features" class="secondary-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose Our System?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    <h3>Accurate Prediction</h3>
+                    <p>Advanced algorithms for precise CKD risk assessment and early detection.</p>
+                </div>
+                <div class="feature-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                    <h3>Patient-Centric</h3>
+                    <p>Personalized analysis and recommendations for better health outcomes.</p>
+                </div>
+                <div class="feature-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
+                        <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/>
+                        <circle cx="20" cy="10" r="2"/>
+                    </svg>
+                    <h3>Expert System</h3>
+                    <p>Built on medical expertise and latest research in nephrology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CKD Prediction System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

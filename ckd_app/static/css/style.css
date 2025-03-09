@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(to bottom right, #fdf2f2, #fde8e8);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 300px;
+  background-image: url('https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?auto=format&fit=crop&q=80&w=2000');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(159, 18, 57, 0.7);
+}
+
+.hero-content {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  max-width: 800px;
+}
+
+.hero-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero-title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Main Content */
+.main-content {
+  padding: 3rem 0;
+}
+
+/* Form Card */
+.form-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-header {
+  background-color: rgb(190, 24, 93);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: white;
+}
+
+.card-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Form Sections */
+.form-sections {
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.form-section {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.personal-info {
+  background-color: rgba(244, 63, 94, 0.1);
+}
+
+.clinical-info {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.personal-info .section-header .icon {
+  color: rgb(190, 24, 93);
+}
+
+.clinical-info .section-header .icon {
+  color: rgb(29, 78, 216);
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4b5563;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgb(190, 24, 93);
+  box-shadow: 0 0 0 3px rgba(190, 24, 93, 0.1);
+}
+
+/* Form Actions */
+.form-actions {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  background-color: rgb(190, 24, 93);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-button:hover {
+  background-color: rgb(157, 23, 77);
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(190, 24, 93, 0.3);
+}
+
+/* Icons */
+.icon {
+  flex-shrink: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+      height: 250px;
+  }
+
+  .hero-content {
+      height: 250px;
+  }
+
+  .hero-title h1 {
+      font-size: 2.25rem;
+  }
+
+  .hero-content p {
+      font-size: 1.125rem;
+  }
+
+  .form-sections {
+      padding: 1.5rem;
+  }
+
+  .form-section {
+      padding: 1rem;
+  }
+
+  .form-actions {
+      padding: 1rem 1.5rem;
+  }
+}
